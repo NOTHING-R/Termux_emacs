@@ -1,0 +1,24 @@
+#+TITLE: README
+* HOW TO INSTALL TERMUX ON ANDROID
+First you have to install termux from github or fdroid [[termux android][https://f-droid.org/en/packages/com.termux/]] visit that link. Then install it on android. Then update your termux using this command
+#+begin_src shell
+pkg update && pkg upgrade -y
+#+end_src
+
+Then install emacs on your termux.
+#+begin_src shell
+pkg install emacs
+#+end_src
+
+Then run it
+#+begin_src shell
+emacs
+#+end_src
+Then ctrl+c to exit from termux
+#+begin_src shell
+CTRL+C
+#+end_src
+Now clone the guthub repo to your ~/.emacs.d folder
+#+begin_src shell
+git clone https://github.com/NOTHING-R/Termux_emacs.git ~/.emacs.d
+#+end_src

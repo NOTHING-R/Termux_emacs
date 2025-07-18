@@ -11,9 +11,9 @@ Then update your termux using this command
 pkg update && pkg upgrade -y
 #+end_src
 
-Then install emacs on your termux.
+Then install emacs and git on your termux.
 #+begin_src shell
-pkg install emacs
+pkg install git emacs
 #+end_src
 
 Then run it

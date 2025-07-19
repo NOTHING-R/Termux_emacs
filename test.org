@@ -1,0 +1,5 @@
+
+* This is for just testing pepous
+#+begin_example
+if it works then we can control our github from our phn and also could manage our code and other things.
+#+end_example

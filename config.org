@@ -580,13 +580,10 @@
 #+begin_src emacs-lisp
 (setq mouse-autoselect-window t
       focus-follows-mouse t)
-(display-battery-mode 1) ;;Show the battery
-;; (setq display-time-day-and-date t)
+
 (display-time-mode 1) ;; Show Time
 (setq display-time-format "%H:%M") ;; Time Formate 
 #+end_src
-
-
 
 ** IDE
 #+begin_src emacs-lisp
@@ -605,23 +602,6 @@
   (company-idle-delay 0.0)
   (company-show-numbers t)
   (company-tooltip-align-annotations t))
-
-
-
-
-
-;; (use-package company
-;;   :ensure t
-;;   :diminish
-;;   :hook (prog-mode . company-mode)
-;;   :bind (:map company-active-map
-;;               ("<tab>" . company-complete-selection))
-;;   :init (global-company-mode)
-;;   :custom
-;;   (company-minimum-prefix-length 2)
-;;   (company-idle-delay 0.0)
-;;   (company-show-numbers t)
-;;   (company-tooltip-align-annotations t))
 
 ;; ========== Flycheck Mode ==========
 (use-package flycheck
@@ -663,8 +643,6 @@
                          (lsp))))
 #+end_src
 
-
-
 ** DASHBOARD
 #+begin_src emacs-lisp
 (use-package dashboard
@@ -676,19 +654,9 @@
   (setq dashboard-banner-logo-title "NOTHING IS HERE")
   ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
   (setq dashboard-startup-banner "/home/nothing/Pictures/555.png"))  ;; use custom image as banner
-;;   (setq dashboard-center-content nil) ;; set to 't' for centered content
-;;   (setq dashboard-items '((recents . 5)
-;;                           (agenda . 5 )
-;;                           (bookmarks . 3)
-;;                           (projects . 3)
-;;                           (registers . 3)))
-;; :custom
-;; (dashboard-modify-heading-icons '((recents . "file-text")
-;;                                   (bookmarks . "book")))
 :config
 (dashboard-setup-startup-hook)
 #+end_src
-
 
 ** DIRED
 #+begin_src emacs-lisp
@@ -715,11 +683,8 @@
 )
 
 (setq dired-listing-switches "-lha")
-;;(add-hook 'peep-dired-hook 'evil-normalize-keymaps)
 
-;;(add-hook 'peep-dired-hook 'evil-normalize-keymaps)
 #+end_src
-
 
 ** BUFFER MOVE
 #+begin_src emacs-lisp
@@ -792,6 +757,3 @@ one, an error is signaled."
       (set-window-buffer other-win buf-this-buf)
       (select-window other-win))))
 #+end_src
-
-
-

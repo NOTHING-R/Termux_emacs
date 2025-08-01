@@ -30,3 +30,12 @@ Now clone the guthub repo to your ~/.emacs.d folder
 #+begin_src shell
 git clone https://github.com/NOTHING-R/Termux_emacs.git ~/.emacs.d
 #+end_src
+
+* ALL AT ONCE
+#+begin_src shell
+termux-setup-storage
+pkg update && pkg upgrade -y
+pkg install git emacs
+git clone https://github.com/NOTHING-R/Termux_emacs.git ~/.emacs.d
+emacs
+#+end_src

@@ -33,6 +33,7 @@ git clone https://github.com/NOTHING-R/Termux_emacs.git ~/.emacs.d
 
 * ALL AT ONCE
 #+begin_src shell
+cd ~
 termux-setup-storage
 pkg update && pkg upgrade -y
 pkg install git emacs
